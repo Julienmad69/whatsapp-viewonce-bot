@@ -1,1 +1,14 @@
-
+{
+  "name": "whatsapp-viewonce-bot",
+  "version": "1.0.0",
+  "description": "Bot WhatsApp pour transfert automatique des messages view-once",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.9",
+    "qrcode-terminal": "^0.12.0",
+    "pino": "^8.21.0"
+  }
+}
