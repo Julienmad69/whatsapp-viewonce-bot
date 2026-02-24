@@ -1,4 +1,4 @@
-FROM node:20-bullseye-slim
+FROM node:18-slim
 
 WORKDIR /app
 
@@ -11,7 +11,10 @@ RUN npm install
 # Copie du reste du code
 COPY . .
 
-# Exposition du port (optionnel)
+# Création du dossier session
+RUN mkdir -p /app/session
+
+# Exposition du port
 EXPOSE 8000
 
 # Commande de démarrage
